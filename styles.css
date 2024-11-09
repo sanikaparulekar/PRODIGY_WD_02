@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff; /* Light blue background */
+}
+
+.stopwatch {
+    text-align: center;
+    background: #ffffff; /* White background for the stopwatch */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333; /* Darker text for the title */
+}
+
+#display {
+    font-size: 60px;
+    margin: 20px 0;
+    color: #4CAF50; /* Green color for the time display */
+    border: 2px solid #4CAF50; /* Border around the time display */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e8f5e9; /* Light green background for the time display */
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #4CAF50; /* Green on hover */
+    color: white;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.controls button:active {
+    transform: scale(0.95); /* Slightly shrink button on click */
+}
+
+#laps {
+    margin-top: 20px;
+}
+
+#lapList {
+    list-style-type: none;
+    padding: 0;
+    color: #555; /* Dark gray for lap times */
+}
+
+#lapList li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd; /* Light gray border between laps */
+}
+
+#lapList li:last-child {
+    border-bottom: none; /* Remove border for the last lap */
+}
